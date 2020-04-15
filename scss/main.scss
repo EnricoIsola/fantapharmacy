@@ -1,0 +1,103 @@
+$color-rosso: #AC235C;
+$color-verde: #0B9EA4;
+$color-blu: #1C5688;
+$color-bianco: #fff;
+$color-link: rgb(245, 228, 228);
+
+
+
+.alert{
+  margin-bottom: 0;
+  border-radius: 0;
+  border: 0;
+  color: $color-rosso;
+
+      .badge,
+      .btn {
+          background: $color-rosso;
+          color: $color-bianco;
+      }
+
+      .badge{
+          font-size: 1em;
+      }
+}
+
+
+.navbar{
+  background: $color-verde;
+  border-radius: 0;
+  margin-bottom: 0;
+
+      .navbar-nav{
+          .nav-link {
+             color: $color-bianco; 
+             &:hover{
+                color: $color-link;
+           }
+          }
+      } 
+
+      .navbar-brand{
+        color: $color-bianco;
+        font-size: 1.8em;
+      }
+}
+
+.titolo_principale {
+    font-style:italic;
+    font-size: 1.8em;
+  }
+
+.titolo_secondario {
+    font-style:italic;
+    font-size: 1.4em;
+  }
+
+
+
+.didascalia{
+    color: red;
+    font-size: 0.7em;
+  }
+
+
+
+footer{
+  background: $color-blu;
+  margin-top: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+    
+        p {
+          color: $color-bianco;
+          text-align: center;
+          font-size: 0.7em;
+        }
+}
+
+
+
+@media screen and (max-width: 760px) {
+  .alert .nascosto {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 322px) {
+  .alert i.clicca {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .alert .btn-sm {
+    display: none;
+  }
+  .alert i.clicca {
+    display: inline;
+  }
+  footer p {
+    font-size: 0.5em;
+  }
+}
